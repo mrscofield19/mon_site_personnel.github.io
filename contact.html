@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Mikael KABORE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo"><img src="assets/logo.png" alt="Logo"></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="photo.html">Photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="container" data-aos="fade-up">
+    <h2>Contactez-moi</h2>
+    <form id="contact-form" action="https://script.google.com/macros/s/XYZ/exec" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit" disabled>Envoyer</button>
+      <div class="success-message" id="success">Merci pour votre message !</div>
+    </form>
+    <div id="map" style="height:300px; border-radius:var(--radius); margin-top:1rem;" data-aos="zoom-in"></div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Mikael KABORE</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/agenda.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

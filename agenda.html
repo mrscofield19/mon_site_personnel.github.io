@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda - Mikael KABORE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo"><img src="assets/logo.png" alt="Logo"></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="photo.html">Photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+    </div>
+  </nav>
+  <section class="container" data-aos="fade-up">
+    <h2>Planning Hebdomadaire</h2>
+    <div class="filter-buttons">
+      <button data-matiere="all" class="active">Toutes</button>
+      <button data-matiere="réseaux">Réseaux</button>
+      <button data-matiere="sécurité">Sécurité</button>
+      <button data-matiere="iot">IoT</button>
+      <button data-matiere="mathematiques">Mathématiques</button>
+      <button data-matiere="litterature">Littérature</button>
+      <button data-matiere="sciences">Sciences</button>
+    </div>
+    <table id="agenda-table">
+      <tr><th>Heure</th><th>Lundi</th><th>Mardi</th><th>Mercredi</th><th>Jeudi</th><th>Vendredi</th></tr>
+      <tr data-matiere="mathematiques"><td>08:00 - 09:30</td><td class="mathematiques">Analyse de Signaux</td><td class="mathematiques">Algèbre Linéaire</td><td class="mathematiques">Statistiques</td><td class="mathematiques">Équations Différentielles</td><td class="mathematiques">Probabilités</td></tr>
+      <tr data-matiere="litterature"><td>09:45 - 11:15</td><td class="litterature">Expression Écrite</td><td class="litterature">Littérature Contemporaine</td><td class="litterature">Analyse de Textes</td><td class="litterature">Grammaire Avancée</td><td class="litterature">Oral de Français</td></tr>
+      <tr data-matiere="sciences"><td>11:30 - 13:00</td><td class="sciences">Physique des Ondes</td><td class="sciences">Chimie Organique</td><td class="sciences">Biologie Cellulaire</td><td class="sciences">Thermodynamique</td><td class="sciences">Électromagnétisme</td></tr>
+      <tr data-matiere="réseaux"><td>14:00 - 15:30</td><td class="réseaux">Protocoles Réseau</td><td class="réseaux">Topologie Réseaux</td><td class="réseaux">Routage Avancé</td><td class="réseaux">Switching & VLAN</td><td class="réseaux">BGP & OSPF</td></tr>
+      <tr data-matiere="sécurité"><td>15:45 - 17:15</td><td class="sécurité">Introduction à la Crypto</td><td class="sécurité">Firewall & VPN</td><td class="sécurité">IDS/IPS</td><td class="sécurité">Audit de Sécurité</td><td class="sécurité">Gestion des Certificats</td></tr>
+      <tr data-matiere="iot"><td>17:30 - 19:00</td><td class="iot">Capteurs IoT</td><td class="iot">Arduino & C</td><td class="iot">Raspberry Pi</td><td class="iot">MQTT & IoT Cloud</td><td class="iot">Prototypage Final</td></tr>
+    </table>
+  </section>
+  <footer>
+    <p>&copy; 2025 Mikael KABORE</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/agenda.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
